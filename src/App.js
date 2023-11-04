@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import axios from "axios";
 
-handleSubmit = (item) => {
+const handleSubmit = (item) => {
   this.toggle();
   if (item.id) {
     axios
@@ -15,7 +15,7 @@ handleSubmit = (item) => {
     .then((res) => this.refreshList());
 };
 
-handleDelete = (item) => {
+const handleDelete = (item) => {
   axios
     .delete(`http://localhost:8000/api/gds/${item.id}`)
     .then((res) => this.refreshList());
