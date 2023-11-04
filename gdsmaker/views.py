@@ -7,6 +7,10 @@ from django.http import HttpResponse, HttpResponseNotFound
 import os
 
 
+def index(request):
+    return render(request, 'index.html')
+
+
 # Create your views here.
 class GDSViewSet(viewsets.ModelViewSet):
     serializer_class = GDSSerializer
