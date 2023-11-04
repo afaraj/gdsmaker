@@ -84,6 +84,8 @@ TEMPLATES = [
     },
 ]
 
+print(f"TEMPLATES: {TEMPLATES[0]['DIRS']}")
+
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 
